@@ -1,5 +1,13 @@
+html {
+background: #82b1ff; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(-45deg, #82b1ff, #b6e3ff); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(-45deg, #82b1ff, #b6e3ff); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(-45deg, #82b1ff, #b6e3ff); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(-45deg, #82b1ff, #b6e3ff); /* Standard syntax */
+}
+
 .top-buffer {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .bottom-buffer {
@@ -8,7 +16,6 @@
 
 .footer {
   color: #888;
-  background-color: #EEE;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -31,12 +38,23 @@
   padding: 0px;
 }
 
+.fluidimage {
+  width: 40%;
+  min-width: 350px;
+  max-width: 1000px;
+}
+
+.wrap {
+  width: 50%;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
 }
-
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
